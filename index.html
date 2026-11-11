@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My todo list - Todo List</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>My ToDo list</h1>
+            <p>Organize your day, one task at a time.</p>
+        </header>
+
+        <section class="todo-box">
+
+            <h2>My Todo</h2>
+
+            <div class="input-area">
+                <input type="text" id="taskInput"
+                placeholder="What do you need to do?">
+
+                <button id="addBtn">Add Task</button>
+            </div>
+
+            <div class="filters">
+                <button class="filter active" data-filter="all">All</button>
+                <button class="filter" data-filter="active">Active</button>
+                <button class="filter" data-filter="completed">Completed</button>
+            </div>
+
+            <ul id="taskList"></ul>
+
+            <div class="footer">
+                <span id="taskCount">0 tasks left</span>
+                <button id="clearBtn">Clear Completed</button>
+            </div>
+
+        </section>
+
+        <p class="copyright">Made with ❤️ using HTML, CSS & JavaScript</p>
+
+    </div>
+
+</body>
+</html>
